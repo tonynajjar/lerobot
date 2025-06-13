@@ -1,17 +1,23 @@
-// For VS Code Dev Containers
 {
     "name": "LeRobot GPU DevContainer",
     "build": {
         "dockerfile": "../docker/Dockerfile",
         "context": ".."
     },
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
-    },
-    "extensions": [
-        "ms-python.python",
-        "ms-toolsai.jupyter",
-        "ms-azuretools.vscode-docker"
+    "runArgs": [
+        "--name=lerobot"
     ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
     "remoteUser": "root"
 }
