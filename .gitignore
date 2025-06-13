@@ -29,7 +29,6 @@ outputs
 
 # VS Code
 .vscode
-.devcontainer
 
 # HPC
 nautilus/*.yaml
