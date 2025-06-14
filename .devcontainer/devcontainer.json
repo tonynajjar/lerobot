@@ -10,7 +10,8 @@
         "--privileged"
     ],
     "mounts": [
-        "source=${localWorkspaceFolder},target=/lerobot,type=bind"
+        "source=${localWorkspaceFolder},target=/lerobot,type=bind",
+        "source=${localWorkspaceFolder}/.devcontainer/huggingface_cache,target=/root/.cache/huggingface/lerobot/calibration,type=bind"
     ],
     "customizations": {
         "vscode": {
