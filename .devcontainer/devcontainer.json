@@ -15,7 +15,7 @@
         "source=${localWorkspaceFolder}/.devcontainer/huggingface_cache,target=/root/.cache/huggingface/lerobot/calibration,type=bind",
         "source=/dev,target=/dev,type=bind",
         "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind",
-        "source=${localEnv:HOME}/.Xauthority,target=/root/.Xauthority,type=bind"
+        "source=${localEnv:XAUTHORITY},target=/root/.Xauthority,type=bind"
     ],
     "containerEnv": {
         "DISPLAY": "${localEnv:DISPLAY}"
