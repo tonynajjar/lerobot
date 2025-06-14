@@ -5,7 +5,9 @@
         "context": ".."
     },
     "runArgs": [
-        "--name=lerobot"
+        "--name=lerobot",
+        "--gpus=all",
+        "--privileged"
     ],
     "mounts": [
         "source=${localWorkspaceFolder},target=/lerobot,type=bind"
