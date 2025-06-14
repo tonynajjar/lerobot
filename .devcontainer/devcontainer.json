@@ -7,6 +7,9 @@
     "runArgs": [
         "--name=lerobot"
     ],
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/lerobot,type=bind"
+    ],
     "customizations": {
         "vscode": {
             "settings": {
